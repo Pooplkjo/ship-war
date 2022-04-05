@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<style>
+		.vopros{
+			width: 500px;
+			height: 750px;
+			background: red;
+			margin-left: auto;
+			margin-top: auto;
+			margin-right: auto;
+		}
+		.vopros2{
+			width: 500px;
+			height: 750px;
+			background: blue;
+			margin-left: auto;
+			margin-top: auto;
+			margin-right: auto;
+			display: none;
+		}
+		.vopros3{
+			width: 500px;
+			height: 750px;
+			background: blue;
+			margin-left: auto;
+			margin-top: auto;
+			margin-right: auto;
+			display: none;
+		}
+		.question{
+			width: 300px;
+			height: 50px;
+			background: blue;
+			margin-left: 100px;
+			margin-top: 25px;
+		}
+		.answers{
+			width: 300px;
+			height: 50px;
+			background: blue;
+			margin-left: 100px;
+			margin-top: 25px;
+		}
+		.otvet{
+			width: 300px;
+			height: 50px;
+			background: blue;
+			margin-left: 100px;
+			margin-top: 25px;
+		}
+		.otvet2{
+			width: 300px;
+			height: 50px;
+			background: blue;
+			margin-left: 100px;
+			margin-top: 25px;
+		}
+		.end{
+			width: 300px;
+			height: 200px;
+			background: grey;
+			display: none;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+			
+
+
+	</style>
+<div class="vopros">
+	<img src="164-1644613_roblox-noob-no-background-hd-png-download.png" style="margin-left: 125px;">
+	<div class="question">
+		<h2>Кто изображен на рисунке?</h2>
+	</div>
+		<button class="answers" >
+		<h2 style="margin-left:25px;">noob</h2>
+		</button>
+		<button class="answers" style="margin-top: 50px;">
+		<h2 style="margin-left:25px;">человек</h2>
+		</button>
+		<button class="answers" style="margin-top: 50px;">
+		<h2 style="margin-left:25px;">Dummy</h2>
+		</button>
+
+
+</div>
+<div class="vopros2">
+	<div class="question">
+		<h2>Этот игрок взломал десяток игр и аккаунты игроков он еще не забанен</h2>
+	</div>
+		<button class="otvet" >
+		<h2 style="margin-left:25px;">Bloxwatch</h2>
+		</button>
+		<button class="otvet" style="margin-top: 50px;">
+		<h2 style="margin-left:25px;">1x1x1x1</h2>
+		</button>
+		<button class="otvet" style="margin-top: 50px;">
+		<h2 style="margin-left:25px;">Doctor_Louie</h2>
+		</button>
+</div>
+<div class="vopros3">
+	<div class="question">
+		<h2>Эта валюта ыла удалена в 2016 году она была почти заменой нынешней валютой robux</h2>
+	</div>
+		<button class="otvet2" >
+		<h2 style="margin-left:25px;">bobux</h2>
+		</button>
+		<button class="otvet2" style="margin-top: 50px;">
+		<h2 style="margin-left:25px;">tix</h2>
+		</button>
+		<button class="otvet2" style="margin-top: 50px;">
+		<h2 style="margin-left:25px;">scrap</h2>
+		</button>
+</div>
+<div class="end" style="margin-top:100px">
+	<h2>Ты победил</h2>
+</div>
+<script>
+let answer = document.querySelectorAll(".answers")
+let vopros1 = document.querySelector(".vopros")
+let otvet = document.querySelectorAll(".otvet")
+let vopros2 = document.querySelector(".vopros2")
+let vopros3 = document.querySelector(".vopros3")
+let otvet2 = document.querySelectorAll(".otvet2")
+let end = document.querySelector(".end")
+answer[0].onclick = function(){
+	alert("Правильный ответ")
+vopros1.style.display = "none"
+vopros2.style.display = "block"
+}
+otvet[2].onclick = function(){
+	alert("Правильный ответ")
+	vopros2.style.display = "none"
+	vopros3.style.display = "block"
+}
+otvet2[1].onclick = function(){
+	alert("Ты выиграл")
+	vopros3.style.display = "none"
+	end.style.display = "block"
+}
+
+
+
+
+</script>
+</body>
+</html>
